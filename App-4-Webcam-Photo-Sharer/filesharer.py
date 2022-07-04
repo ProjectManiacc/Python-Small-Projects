@@ -1,9 +1,9 @@
-from multiprocessing.connection import Client
+from filestack import Client
 
 
 class FileSharer:
 
-    def __int__(self,filepath,api_key="MY API KEY"):
+    def __init__(self, filepath, api_key="MY API KEY"):
         self.filepath = filepath
         self.api_key = api_key
 
