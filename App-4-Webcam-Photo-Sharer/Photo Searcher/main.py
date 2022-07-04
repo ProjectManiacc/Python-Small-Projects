@@ -3,29 +3,37 @@ from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.lang import Builder
 import wikipedia
 import requests
-
+import certifi
+import ssl
 
 Builder.load_file('frontend.kv')
 
 
 
 class FirstScreen(Screen):
-    def search_image(self):
+    def get_image_link(self):
         # Get user query from TextInput
         query = self.manager.current_screen.ids.user_query.text
 
         # Get wikipedia page and the first image list
 
-        page = wikipedia.page(query)
-        image_link = page.images[0]
-        req = requests.get(image_link, verify=False)
-        image_path = 'files/image.jpg'
-        with open(image_path, 'wb') as file:
-            file.write(req.content)
+            page = wikipedia.page(query,auto_suggest=False)
+            image_link = page.images[0]
 
-        # Set the image in the Image widget
+            return image_link
+    def download_image(self):
+            req = requests.get(self.get_image_link())
+            image_path = 'files/image.jpg'
+            with open(image_path, 'wb') as file:
+                file.write(req.content)
 
-        self.manager.current_screen.ids.img.source = image_path
+            return image_path
+
+    def set_image(self):
+            # Set the image in the Image widget
+            self.manager.current_screen.ids.img.source = self.download_image()
+
+
 
 
 class RootWidget(ScreenManager):
