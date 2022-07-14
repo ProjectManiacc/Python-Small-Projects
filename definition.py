@@ -12,4 +12,3 @@ class Definition:
 
 
 definition = Definition(term='moon')
-print(definition.get())
