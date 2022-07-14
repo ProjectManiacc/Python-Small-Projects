@@ -39,3 +39,4 @@ class NewsFeed:
               f'language={self.language}&' \
               f'apiKey={self.apiKey}'
         return url
+
