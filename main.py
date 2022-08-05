@@ -6,7 +6,7 @@ from Webapp.about import About
 from Webapp.dictionary import Dictionary
 from Webapp import page
 
-imports = list(globals().values)
+imports = list(globals().values())
 
 for obj in imports:
     if inspect.isclass(obj):
