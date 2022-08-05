@@ -1,0 +1,8 @@
+setup.py
+Weather_Forecast.egg-info/PKG-INFO
+Weather_Forecast.egg-info/SOURCES.txt
+Weather_Forecast.egg-info/dependency_links.txt
+Weather_Forecast.egg-info/requires.txt
+Weather_Forecast.egg-info/top_level.txt
+weatherforecast/__init__.py
+weatherforecast/weatherforecast.py

@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/App-10-Cinema-Ticket-Booking" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/App-8-Instant-Dictionary-Webapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/App-9-Instant-Dictionary-API" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/Databases" vcs="Git" />
   </component>
 </project>
