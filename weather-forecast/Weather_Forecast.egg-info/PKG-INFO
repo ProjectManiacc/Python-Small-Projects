@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Weather-Forecast
+Version: 1.0
+Summary: Weather forecast data
+Home-page: https://github.com/ProjectManiacc/Python-Projects
+Author: Piotr Kluziok
+Author-email: piotrkluziok@gmail.com
+License: MIT
+Keywords: weather,forecast,openweather
+Platform: UNKNOWN
+Classifier: Developmemt Statis :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7, <4
+
+UNKNOWN
+
